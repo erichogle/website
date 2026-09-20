@@ -12,10 +12,35 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-
 
 <body>
 
-<h2>The cohomology of $\text{Gr}_2(\mathbb{R}^{p,1})$</h2>
+<h2>The cohomology of $\text{Gr}_2(\mathbb{R}^{n,1})$</h2>
 
 A formula for $H^{\ast,\ast}(\text{Gr}_k(\mathbb{R}^{n,1});\underline{\mathbb F}_2)$ appears in my article <em>RO(C<sub>2</sub>)-graded cohomology of equivariant Grassmannian manifolds</em>, in <a href="https://nyjm.albany.edu/j/2021/27-2v.pdf">New York Journal of Mathematics</a>,
-preprint available <a href="https://arxiv.org/abs/1806.01537">here</a>.
+preprint available <a href="https://arxiv.org/abs/1806.01537">here</a>.<br><br>
+
+If we express partitions as Young diagrams, it makes sense to define the "trace" of a partition. Now define $\text{part}(p,k,m,t)$ to be the number of partitions of p into at most $k$ natural numbers, none exceeding $m$, which have trace $t$. Then<br><br>
+
+<center>
+$\displaystyle H^{\ast,\ast}(\text{Gr}_k(\mathbb{R}^{n,1}))=\bigoplus_{p\le k(n-k)\atop q\le p}\Sigma^{p,q}\mathbb{M}_2^{\oplus \text{part}(p,k,n-k,q)}$<br><br>
+</center>
+
+In particular, <br><br>
+
+<center>
+$
+\begin{align*}
+\displaystyle H^{\ast,\ast}(\text{Gr}_2(\mathbb{R}^{n,1}))&=\bigoplus_{p\le 2(n-2)\atop q\le p}\Sigma^{p,q}\mathbb{M}_2^{\oplus \text{part}(p,2,n-2,q)}\\
+&=\mathbb{M}_2\oplus
+\left(\bigoplus_{p\le 2(n-2)}\Sigma^{p,1}\mathbb{M}_2^{\oplus \text{part}(p,2,n-2,1)}\right)\oplus
+\left(\bigoplus_{p\le 2(n-2)}\Sigma^{p,2}\mathbb{M}_2^{\oplus \text{part}(p,2,n-2,2)}\right)\\
+\\
+&=\mathbb{M}_2\oplus
+\left(\Sigma^{1,1}\mathbb{M}_2\oplus\bigoplus_{p=2}^{n-2}\Sigma^{p,1}\mathbb{M}_2\oplus\Sigma^{n-1,1}\mathbb{M}_2\right)\oplus
+\bigoplus_{p=4}^{2(n-2)}\mathbb{M}_2^{\oplus \text{part}(p,2,n-2,2)}\\
+\end{align*}
+$<br><br>
+</center>
+
+
 
 </body>
 </html>
